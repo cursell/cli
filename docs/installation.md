@@ -36,11 +36,21 @@ If you prefer not to install globally:
 npx cursell hub init
 ```
 
-Note that when using `npx`, `cursell-mcp` and `cursell-statusline` are not
-available on your `PATH`. The `init` command will detect this and fall back
-to configuring your AI CLI with `npx cursell-mcp` instead — this works but
-adds a small cold-start delay each time the MCP server is launched. A
-global install is recommended for day-to-day use.
+`cursell` detects that it was launched via `npx` and writes npx-based
+entries into your AI CLI configs automatically (your `cursell-hub` server
+runs as `npx -y -p cursell cursell-mcp`).
+
+The first launch of each day has a ~1-second cold start while npx
+refreshes its cache. Subsequent launches are instant.
+
+You can also force npx mode even after installing globally:
+
+```bash
+cursell hub init --use-npx
+```
+
+See [examples/npx-usage.md](../examples/npx-usage.md) for the full
+walkthrough and trade-offs versus a global install.
 
 ## Updating
 

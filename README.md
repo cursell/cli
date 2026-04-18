@@ -13,7 +13,7 @@ use specialized AI agents across Claude Code, Codex CLI, and Gemini CLI.
 npm install -g cursell
 ```
 
-Or run without installing:
+Or run without installing (see [examples/npx-usage.md](examples/npx-usage.md)):
 
 ```bash
 npx cursell hub init
@@ -42,6 +42,7 @@ Load the "vibesec" agent and review this code.
 | `cursell hub init` | Configure your AI CLI to use the Cursell Hub |
 | `cursell hub init --provider <name>` | Configure only for `claude`, `codex`, or `gemini` |
 | `cursell hub init --with-statusline` | Also add a Claude Code statusline that shows the active agent per terminal |
+| `cursell hub init --use-npx` | Write npx-based entries (for users who don't want to install globally — see [examples/npx-usage.md](examples/npx-usage.md)) |
 | `cursell hub update` | Refresh skill / instruction files |
 | `cursell hub login` | Authenticate with the Cursell Hub |
 | `cursell --help` | Show all commands |
