@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: mailto:security@cursell.ai
+    about: Email security@cursell.ai — do not open a public issue
+  - name: Account / billing / hub questions
+    url: https://cursell.ai/support
+    about: Not a bug in the CLI? Use the support portal.
+  - name: Discussions
+    url: https://github.com/cursell/cli/discussions
+    about: Questions, ideas, or chat with other users
