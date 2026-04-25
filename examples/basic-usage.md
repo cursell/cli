@@ -6,7 +6,7 @@ loading your first agent.
 ## 1. Install
 
 ```bash
-npm install -g cursell
+npm install -g @cursell/cli
 ```
 
 Verify:

@@ -14,7 +14,7 @@ npm config get prefix
 Or use `npx`:
 
 ```bash
-npx cursell hub init
+npx @cursell/cli hub init
 ```
 
 ## Claude Code doesn't show `cursell-hub` under `/mcp`

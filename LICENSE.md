@@ -1,12 +1,13 @@
-© 2026 Cursell. All rights reserved.
+Licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
-Use of the `cursell` npm package is subject to
-[Cursell's Terms of Service](https://cursell.ai/terms).
+Copyright 2026 Cursell.
 
-This repository contains documentation, examples, and installation resources.
-The runtime source code of the Cursell CLI is not published here and is not
-licensed for redistribution.
+The runtime source code of the Cursell CLI is distributed via npm as
+[`@cursell/cli`](https://www.npmjs.com/package/@cursell/cli) and the
+five platform packages (`@cursell/cli-darwin-arm64`, `@cursell/cli-darwin-x64`,
+`@cursell/cli-linux-x64`, `@cursell/cli-linux-arm64`, `@cursell/cli-win32-x64`),
+each shipped under the same Apache 2.0 license. See the `LICENSE` file
+inside any of those packages.
 
-The documentation and examples in this repository may be copied and adapted
-for personal reference, provided any derived works do not use the "Cursell"
-name, logo, or brand marks without written permission.
+This repository contains documentation and examples that may be copied,
+adapted, or redistributed under the same terms.

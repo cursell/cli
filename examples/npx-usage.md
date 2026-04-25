@@ -1,13 +1,13 @@
 # Using Cursell without installing it globally (`npx`)
 
-If you prefer not to `npm install -g cursell` — for example on a shared
+If you prefer not to `npm install -g @cursell/cli` — for example on a shared
 machine, in a dev container, or just to try it out — you can run Cursell
 entirely through `npx`.
 
 ## One-shot setup
 
 ```bash
-npx cursell hub init
+npx @cursell/cli hub init
 ```
 
 `cursell` auto-detects that it was launched via `npx` and writes
@@ -28,7 +28,7 @@ For example, `~/.claude.json` gets:
 }
 ```
 
-Every time your AI CLI launches, it runs `npx -y -p cursell cursell-mcp`.
+Every time your AI CLI launches, it runs `npx -y -p @cursell/cli cursell-mcp`.
 The first run downloads and caches the package; subsequent runs use the
 cache. Expect a ~1-second cold start on the first launch of each day.
 
@@ -36,7 +36,7 @@ cache. Expect a ~1-second cold start on the first launch of each day.
 
 If you already installed `cursell` globally but want the config to use
 `npx` anyway (for example to always get the latest version without
-running `npm install -g cursell@latest`), pass `--use-npx`:
+running `npm install -g @cursell/cli@latest`), pass `--use-npx`:
 
 ```bash
 cursell hub init --use-npx
@@ -46,7 +46,7 @@ cursell hub init --use-npx
 
 ```bash
 # Configure once (no global install)
-npx cursell hub init --provider claude --with-statusline
+npx @cursell/cli hub init --provider claude --with-statusline
 
 # Restart Claude Code
 # (quit and relaunch the app)
@@ -68,7 +68,7 @@ npx -y cursell@latest hub update
 
 ## Trade-offs versus global install
 
-| | `npm install -g cursell` | `npx` only |
+| | `npm install -g @cursell/cli` | `npx` only |
 |---|---|---|
 | One-time install | ✅ | ✅ |
 | First-launch speed | instant | ~1s cold start |
@@ -77,5 +77,5 @@ npx -y cursell@latest hub update
 | Needs `npm install -g` permissions | ✅ | ❌ |
 | Auto-updates | ❌ (manual) | ✅ (each npx run) |
 
-If you're unsure, `npm install -g cursell` is the simpler choice for
+If you're unsure, `npm install -g @cursell/cli` is the simpler choice for
 everyday use. Switch to `npx` only if that doesn't fit your environment.

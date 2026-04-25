@@ -20,7 +20,7 @@ mitigation within **14 days** for confirmed high-severity issues.
 
 In scope:
 
-- The `cursell` npm package (all three binaries: `cursell`, `cursell-mcp`,
+- The `@cursell/cli` npm package (all three binaries: `cursell`, `cursell-mcp`,
   `cursell-statusline`)
 - The Cursell Hub API (`api.cursell.ai`)
 
@@ -34,7 +34,7 @@ Out of scope:
 ## Supported versions
 
 Only the latest minor release of `cursell` receives security updates. We
-recommend always running `npm install -g cursell@latest`.
+recommend always running `npm install -g @cursell/cli@latest`.
 
 ## Responsible disclosure
 

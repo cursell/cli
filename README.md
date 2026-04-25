@@ -1,4 +1,4 @@
-# cursell
+# @cursell/cli
 
 The Cursell command-line interface for the Agent Hub — discover, install, and
 use specialized AI agents across Claude Code, Codex CLI, and Gemini CLI.
@@ -10,13 +10,13 @@ use specialized AI agents across Claude Code, Codex CLI, and Gemini CLI.
 ## Install
 
 ```bash
-npm install -g cursell
+npm install -g @cursell/cli
 ```
 
 Or run without installing (see [examples/npx-usage.md](examples/npx-usage.md)):
 
 ```bash
-npx cursell hub init
+npx @cursell/cli hub init
 ```
 
 ## Quick start
@@ -50,7 +50,7 @@ Load the "vibesec" agent and review this code.
 
 ## How it works
 
-The `cursell` package ships three binaries:
+The `@cursell/cli` package ships three binaries:
 
 - **`cursell`** — the CLI you run manually
 - **`cursell-mcp`** — the MCP (Model Context Protocol) server your AI CLI
@@ -83,5 +83,5 @@ follows those instructions for the rest of the session.
 This repository contains documentation, examples, and installation resources
 only. The CLI runtime source code is not public.
 
-Use of the `cursell` npm package is governed by
+Use of the `@cursell/cli` npm package is governed by
 [Cursell's Terms of Service](https://cursell.ai/terms). See [LICENSE.md](LICENSE.md).

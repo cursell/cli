@@ -11,7 +11,7 @@
 ## Install globally (recommended)
 
 ```bash
-npm install -g cursell
+npm install -g @cursell/cli
 ```
 
 This installs three binaries onto your `PATH`:
@@ -33,12 +33,12 @@ cursell --version
 If you prefer not to install globally:
 
 ```bash
-npx cursell hub init
+npx @cursell/cli hub init
 ```
 
 `cursell` detects that it was launched via `npx` and writes npx-based
 entries into your AI CLI configs automatically (your `cursell-hub` server
-runs as `npx -y -p cursell cursell-mcp`).
+runs as `npx -y -p @cursell/cli cursell-mcp`).
 
 The first launch of each day has a ~1-second cold start while npx
 refreshes its cache. Subsequent launches are instant.
@@ -55,7 +55,7 @@ walkthrough and trade-offs versus a global install.
 ## Updating
 
 ```bash
-npm install -g cursell@latest
+npm install -g @cursell/cli@latest
 ```
 
 All three binaries update together. Restart your AI CLI afterward so it
